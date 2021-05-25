@@ -1,0 +1,107 @@
+﻿<!DOCTYPE html>
+<html>
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width= device-width, initial-scale=1.0" />
+    <title>Account - BlueStore</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <div class="container">
+        <div class="navbar">
+            <div class="logo">
+                <a href="index.html"><img src="images/LOGO_TW.png" width="125px"></a>
+
+            </div>
+            <nav>
+                <ul id="MenuItems">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="Products.html">Products</a></li>
+                    <li><a href="About.html">About</a></li>
+                    <li><a href="Contact.html">Contact</a></li>
+                    <li><a href="Account.html">Account</a></li>
+
+                </ul>
+            </nav>
+            <a href="Shopping_cart.html"><img src="images/cart.png" width="30px" height="30px"></a>
+            <img src="images/menu_icon.jpg" class="menu-icon" onclick="menutoggle()">
+        </div>
+
+    </div>
+    <!--account-->
+    <div class="account-page">
+        <div class="container">
+            <div class="row">
+                <div class="col-2">
+                    <img src="images/FUNDAL_CARTE-.png" width="100%" />
+                </div>
+                <div class="col-2">
+                    <div class="form-container">
+                        <div class="form-btn">
+                            <span onclick="login()">Login   </span>
+                            <span onclick="register()">Register</span>
+                            <hr id="Indicator"/>
+                        </div>
+                        <form id="LoginForm">
+                            <input type="text"  placeholder="Username" />
+                            <input type="password"  placeholder="Password" />
+                            <button type="submit" class="btn">Login</button>
+                            <a href="">Forgot Password</a>
+                        </form>
+                        <form id="RegForm">
+                            <input type="text" id="username" autocomplete="off" placeholder="Username" />
+                            <input type="password" id="password" autocomplete="off" placeholder="Password" />
+                            <button type="submit" class="btn">Register</button>
+                            <button onclick="setTimeout(myFunction, 500);" class="btn">Forgot password</button>
+                          
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--footer-->
+    <div class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="footer-col-1">
+                    <h3>Download Our App</h3>
+                    <p>Download our app from Android and Ios</p>
+                    <div class="app-logo">
+                        <img src="images/logo_playstore.png" />
+                        <img src="images/logo_appstore.png" />
+                    </div>
+                </div>
+                <div class="footer-col-2">
+                    <h3>Useful Links</h3>
+                    <ul>
+                        <li>Coupons</li>
+                        <li>Return policy</li>
+                        <li>Join Affiliate</li>
+                    </ul>
+                </div>
+                <div class="footer-col-3">
+                    <h3>Follow us </h3>
+                    <ul>
+                        <li>Facebook</li>
+                        <li>Insatgram</li>
+                        <li>Twitter</li>
+                    </ul>
+                </div>
+            </div>
+            <div>
+                <hr />
+           
+                <p class="copyright">&copy; Copyright Rosca Alexandru</p>
+                
+            </div>
+        </div>
+    </div>
+    <script src="Script.js"></script>
+
+</body>
+</html>

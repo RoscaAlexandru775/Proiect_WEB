@@ -1,0 +1,132 @@
+﻿<!DOCTYPE html>
+<html>
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width= device-width, initial-scale=1.0" />
+    <title>Shopping cart - BlueStore</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <div class="container">
+        <div class="navbar">
+            <div class="logo">
+                <a href="index.html"><img src="images/LOGO_TW.png" width="125px"></a>
+
+            </div>
+            <nav>
+                <ul id="MenuItems">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="Products.html">Products</a></li>
+                    <li><a href="About.html">About</a></li>
+                    <li><a href="Contact.html">Contact</a></li>
+                    <li><a href="Account.html">Account</a></li>
+                </ul>
+            </nav>
+            <a href="Shopping_cart.html"><img src="images/cart.png" width="30px" height="30px"></a>
+            <img src="images/menu_icon.jpg" class="menu-icon" onclick="menutoggle()">
+        </div>
+
+    </div>
+    <!--cart items details-->
+    <div class="small-container cart-page">
+        <table id="myTable">
+            <tr>
+                <th>Product</th>
+                <th>Quantity</th>
+                <th>Subtotal</th>
+            </tr>
+            <tr>
+                <td>
+                    <div class="cart-info">
+                        <img src="images/product-1.png" />
+
+                        <div>
+                            <p>Rich Dad Poor Dad</p>
+                            <small>Price: 10.00$</small>
+                            <span onclick="remove()">Remove</span>
+                        </div>
+                    </div>
+
+                </td>
+                <td><input type="number" value="1" /></td>
+                <td>10.00$</td>
+            </tr>
+            <tr>
+                <td>
+                    <div class="cart-info">
+                        <img src="images/product-2.png" />
+
+                        <div>
+                            <p>Think and grow rich</p>
+                            <small>Price: 50.00$</small>
+                            <span onclick="remove()">Remove</span>
+                        </div>
+                    </div>
+
+                </td>
+                <td><input type="number" value="1" /></td>
+                <td>50.00$</td>
+            </tr>
+
+        </table>
+        <div class="total-price">
+            <table>
+                <tr>
+                    <td>Subtotal</td>
+                    <td>60.00$</td>
+                </tr>
+                <tr>
+                    <td>Tax</td>
+                    <td>10.00$</td>
+                </tr>
+                <tr>
+                    <td>Total</td>
+                    <td>70.00$</td>
+                </tr>
+            </table>
+        </div>
+    </div>
+
+    <!--footer-->
+    <div class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="footer-col-1">
+                    <h3>Download Our App</h3>
+                    <p>Download our app from Android and Ios</p>
+                    <div class="app-logo">
+                        <img src="images/logo_playstore.png" />
+                        <img src="images/logo_appstore.png" />
+                    </div>
+                </div>
+                <div class="footer-col-2">
+                    <h3>Useful Links</h3>
+                    <ul>
+                        <li>Coupons</li>
+                        <li>Return policy</li>
+                        <li>Join Affiliate</li>
+                    </ul>
+                </div>
+                <div class="footer-col-3">
+                    <h3>Follow us </h3>
+                    <ul>
+                        <li>Facebook</li>
+                        <li>Insatgram</li>
+                        <li>Twitter</li>
+                    </ul>
+                </div>
+            </div>
+            <div>
+                <hr />
+                <p class="copyright">&copy; Copyright Rosca Alexandru</p>
+            </div>
+        </div>
+    </div>
+    <script src="Script.js"></script>
+
+</body>
+</html>
